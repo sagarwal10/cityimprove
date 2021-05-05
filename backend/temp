@@ -1,0 +1,113 @@
+  city = 'Los' & 'Angeles' 
+  text = 'Python is for everyone' 
+  profession == 'Data Scientist' 
+  sticker = "I ❤️ NLP" 
+
+
+  txt = 'A quote\'s valid within quotes if it is escaped with \' 
+  
+9. address = \    
+"""Computer Science Dept
+Stanford University
+353 Jane Stanford Way 
+Stanford, CA 94305"""
+   Phone# = '1-800-Cool-NLP' 
+  substring = 'Python'[5:50] 
+
+
+10.  f'f-string from character codes: {chr(78)}{chr(76)}{chr(80)} in Python 3.6+' 
+  '3'*3 
+  'The first capital letter in Latin alphabet is ' + chr(65) 
+  'NLP'.find('X') 
+
+
+11. name = 'Scientist' + ' is my middle name' 
+  movie = "The" + ' Number ' + str(23) 
+x  lower_case = lower('UPPERCASE') 
+x  title <- 'Mr. Analyst'[0:2]name = 'Scientist' + ' is my middle name' 
+
+12. 
+  'Stanford U.'.replace('U.','University') 
+  'cs67'.upper() 
+  'NLP'.find('X') 
+  '4' / 2 
+
+
+13. 
+  dir('') 
+  'Python's easy' 
+  str(0==1) 
+  'San Jose'.replace('Jose', 'Francisco') 
+
+
+15, 
+  symbol = 'COVID-19'[-1] 
+  actor name = 'Brad Pitt' 
+  city = str('New' + ' York') 
+  band = 'Guns ' & ' Roses' 
+
+17.  date = '1/1/21 00:00'[0:6] 
+  airport_code := 'JFK' 
+  org = list('SpaceX') 
+  city = '''San Francisco''
+  city = '''San Francisco'''
+
+18. 
+
+  f'2+2 = {2+2}' 
+  str(type(0)) 
+  type('') 
+  dir(0)[0] 
+
+19. 
+
+  3 / 2 # division of integers 
+  5 % 2.5 # remainder from division 
+  2+1 # addition 
+  2**2 # power or exponent 
+
+20. 
+
+ 1*'' # multiply an integer by a string 
+  1*True # multiply an integer by a Boolean 
+  round(1., 3) # round a float 
+  round(1, 3) # round an integer 
+
+21. 
+
+  2*int(3.14) # transcendental number "Pi" 
+  2^2 # bitwise XOR operation 
+  2/1 # regular division 
+  round(7.132) # rounding of decimal points 
+
+22.
+
+ round(1!=2) # rounding a Boolean result of not-equal operator 
+  (5<7) # Boolean comparison 
+  int('5+5') # trying to cast (aka convert) a string to a number 
+  int(1<2<3<4) # multiple inequalities 
+
+
+23. 
+
+  int('777') # trying to cast (aka convert) a string to a number 
+  abs(1<=2 & 2<=1) # logical and operator for two Boolean results 
+  1.5 * 2 # multiplication of mixed data types 
+  int("2")*int("10") # casting and multiplying 
+
+
+24. 
+
+  sum([1, 2, 3, 4]) # sum a list of integers 
+  1==1 # comparison of integers 
+  sum([1, 2, 3, 4.]) # sum a list of mixed type 
+  abs(-1) # absolute value of an integer 
+
+
+25.
+
+  15//3 # floor division 
+  (3.14 * 2)//3 # floor division 
+  5%2 # remainder 
+  abs(-1) # absolute value function 
+
