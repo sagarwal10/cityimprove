@@ -34,7 +34,6 @@ router.route('/add').post((req, res) => {
       const neighborhood = req.body.neighborhood;
       const zipcode = Number(req.body.zipcode);
 
-      console.log("Creating new user");
       const newUser = new User({
         name,
         email,
@@ -71,7 +70,7 @@ router.route('/login').post((req, res) => {
 
   User.findOne({email}).then(user => {
     if (!user) {
-      res.status(404).json({ emailnotfound: "Email not found"});
+      return res.status(404).json({ emailnotfound: "Email not found"});
     }
 
     // Check password

@@ -9,6 +9,7 @@ module.exports = function validateRegisterInput(data) {
   data.name = !isEmpty(data.name) ? data.name : "";
   data.email = !isEmpty(data.email) ? data.email : "";
   data.password = !isEmpty(data.password) ? data.password : "";
+  data.password2 = !isEmpty(data.password2) ? data.password2 : "";
   data.zipcode = !isEmpty(data.zipcode) ? data.zipcode : ""; 
 
   if (Validator.isEmpty(data.name)) {
@@ -29,10 +30,11 @@ module.exports = function validateRegisterInput(data) {
     errors.password = "Password must be at least 6 characters";
   }
 
-  if (Validator.isEmpty(data.zipcode)) {
-    errors.zipcode = "Zipcode is needed";
-  }
-  if (!Validator.isPostalCode(data.zipcode, 'US')) {
+  if (!Validator.equals(data.password, data.password2)) {
+    errors.password2 = "Passwords must match";
+  } 
+
+  if (!Validator.isNumeric(data.zipcode) || !Validator.isLength(data.zipcode, { min: 5, max:5 })) {
     errors.zipcode = "Zipcode is not valid";
   } 
 
